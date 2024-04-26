@@ -2,6 +2,8 @@ void main(List<String> arguments) {
   practiceVariablesAndDataTypes();
   practiceArithmeticOperator();
   practiceIncrementAndDecrementOperator();
+
+  print(calculateBMI(72, 1.8));
 }
 
 /// Variables and Data Types
@@ -76,4 +78,9 @@ void practiceIncrementAndDecrementOperator() {
   num2 = 0;
   num2 = num1--;
   print("The value of num2 is $num2");
+}
+
+/// Calculate BMI (with weight in kg and height in meter)
+double calculateBMI(double weight, double height) {
+  return weight / (height * height);
 }
